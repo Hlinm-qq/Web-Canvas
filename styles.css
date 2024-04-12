@@ -1,0 +1,85 @@
+@keyframes showContainer30 {
+    from{height:0;}
+    to{height:30px;}
+}
+@keyframes showContainer25 {
+    from{height:0;}
+    to{height:25px;}
+}
+
+.showCont{
+    animation-name:showContainer30;
+    animation-duration: 2s;
+}
+
+.showCont25{
+    animation-name:showContainer25;
+    animation-duration: 2s;
+}
+
+html {height:100%; zoom:90%}
+body {
+        -webkit-user-select:none;
+        -webkit-touch-callout:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        /* height: 100%; */
+        background: radial-gradient(circle, yellow, rgba(230,230,230,1) 30%, rgba(22,22,22,0.79), rgba(200, 0, 222, 0.8) 155%);
+    }
+.in-title {
+    border:none; display:inline; margin:0px; font-size: 75px;
+    font-family: Brush Script Std; text-shadow: 3px 3px 6px rgba(30,30,30,0.9);
+}
+#main-title {
+    position: absolute; top: 20px; width:600px; left:33%; 
+}
+
+#myCanvas, #myCanvas0 {border: 1px solid rgba(0,0,0,0.4); border-radius: 5px;}
+#myCanvas {box-shadow: 0 0 10px yellow; }
+#cvs-container canvas {position:absolute; }
+#cvs-container {width:510px; height:410px; margin-left: 10px;
+        margin-top:9px; }
+#tools {width:240px; height:400px; background-color: rgba(77, 105, 121, 0.479);
+        margin-top:10px; margin-left:27px; border-radius: 5px;
+        box-shadow: 0 0 20px black; background:linear-gradient(rgba(77, 105, 121, 0.479), white)}
+
+#UI {width:820px; height:420px; border:4px solid rgba(0,0,0,0.8); margin-top:180px;
+        background-color: rgba(0,0,0,1); border-radius: 10px;
+        background:linear-gradient(white, black) ;
+        box-shadow: 0px 0px 45px cyan, 0 0 50px 30px rgba(0,0,0,0.6);}
+#UI::before, #UI::after {clear:both;}
+#UI div {float:left;}
+
+#color-pick {width:90%; height:40px; margin:0px 16px; cursor: pointer;
+    background-color: transparent; border: none; appearance: none;}
+#color-pick::-webkit-color-swatch{
+    border-radius: 15px;
+}
+
+#pen-size input{margin:5px 0px; border:0px solid; background:transparent; width:20px; 
+            text-align: center; outline:none; font-size: large;
+                }
+#pen-size {position:relative; border:0px solid; margin:5px 0px; left:35%; 
+}
+#pen-size b{cursor:pointer; }
+
+#mainTools{margin:15px 50px; display:grid;
+            grid-template-columns: auto auto auto; 
+            }
+#mainTools i, #mainTools a, #mainTools input{
+            width:50px; font-size: 30px; height:40px; text-align: center; 
+            line-height: 40px;color:rgba(0,0,0,0.9);
+            }
+a:active,  a:visited, a:link {color:rgba(0,0,0,0.9); text-decoration:none;}
+#mainTools input{display:none; }
+
+.centerize {margin:auto; }
+.noFloat {clear:both; }
+
+#text-UI {width:220px; height:30px; border:4px solid rgba(0,0,0,0.8); margin-top:20px;
+            background-color: rgba(0,0,0,1); border-radius: 10px; padding: 10px; position: relative;
+            display:none; margin-left: 27px; padding:7px; 
+        }
+.form-select {background-color: grey; border-radius: 5px; height:25px; display:none}
+#text-UI-form{border:0px solid white; height:25px; position: absolute;}
+#filter-UI-form{border:0px solid white; height:25px; position: absolute;}
